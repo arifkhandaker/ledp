@@ -5,27 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.rel{
+		body{
+			background:grey;
+		}
+		.rel-white{
 			height:200px;
-			width:400px;
-			background:green;
+			width:300px;
+			background-color:white;
 			position:relative;
-			left:20%;
+			border:1px solid;
+			border color:black;
+		    left:200;
+		    z-index:1;
 
 		}
-		.abs{
-			height:150px;
-			width:150px;
+		.abs-red{
+			height:120px;
+			width:120px;
 			background-color:red;
 			border-radius:50%;
 			position:absolute; 
-			left:28%;
-			top:5%;
+			left:7%;
+			top:7.5%;
+			z-index:2;
 		}
 	</style>
 </head>
 <body>
-	<div class="rel"></div>
-	<div class="abs"></div>
+	<div class="rel-white"></div>
+	<div class="abs-red"></div>
 </body>
 </html>
